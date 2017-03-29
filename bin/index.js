@@ -11,8 +11,8 @@ commander
 commander
 	.command( 'start' )
 	.description( 'start cron' )
-	.action( ( time ) => {
-		require( '../lib/cron' )( time );
+	.action( () => {
+		require( '../lib/cron' )();
 	} );
 
 commander
